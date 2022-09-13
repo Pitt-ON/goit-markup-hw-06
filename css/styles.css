@@ -336,6 +336,13 @@ img {
   background-color: inherit;
 
   cursor: pointer;
+
+  transition: fill var(--animation);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  fill: var(--accent-bg-cl);
 }
 
 /* Features */
