@@ -345,6 +345,21 @@ img {
   fill: var(--accent-bg-cl);
 }
 
+/* Form */
+
+.register-form {
+  padding: 40px;
+}
+
+
+
+input[name="user-comit"]::placeholder {
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
 /* Features */
 
 .features-list {
