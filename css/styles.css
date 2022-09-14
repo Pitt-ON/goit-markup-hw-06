@@ -269,7 +269,6 @@ img {
   padding: 10px 30px;
 
   font-weight: 700;
-  font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   color: var(--light-txt-cl);
@@ -358,6 +357,16 @@ img {
   margin-bottom: 12px;  
 }
 
+.register-form-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.register-label {
+  margin-bottom: 10px;
+}
+
 .register-person-icon {
   fill: currentColor;
 }
@@ -366,9 +375,14 @@ textarea {
   width: 448px;
   height: 120px;
   resize: none;
+  padding: 12px 16px;
+
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
 }
 
-input[name="user-comit"]::placeholder {
+textarea[name="user-comit"]::placeholder {
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
@@ -646,9 +660,10 @@ input[name="user-comit"]::placeholder {
 .footer-social {
   min-width: 206px;
   align-items: center;
+  margin-right: 93px;
 }
 
-.footer-social-title {
+.footer-title {
   display: block;
   margin-bottom: 20px;
   font-size: 14px;
@@ -690,6 +705,55 @@ input[name="user-comit"]::placeholder {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--accent-bg-cl);
+}
+
+/* Форма підписки footer*/
+
+.footer-form-group {
+  display: flex;
+  align-items: center;
+}
+
+.footer-email-input {
+  display: block;
+}
+
+.footer-input-mail {
+  width: 358px;
+  height: 50px;
+  padding: 15px;
+
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.15)
+}
+
+/* input[name="footer-mail"]::placeholder {
+  font-size: 16px;
+  line-height: calc(20 / 16);  
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6)
+} */
+
+.input-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 200px;
+  min-height: 50px;
+
+  background-color: var(--accent-bg-cl);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  padding: 10px 28px;
+  /* font-weight: 700px; */
+
+  font-weight: 700;
+  line-height: calc(30 / 16);  
+  letter-spacing: 0.06em;
+  color: var(--light-txt-cl);  
 }
 
 /* Portfolio.html */
