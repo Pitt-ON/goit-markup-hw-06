@@ -78,25 +78,39 @@
                 </button>
 
                 <form class="register-form" name="register-form">
+                    <strong class="register-form-title">Залиште свої дані, ми вам передзвонимо</strong>
 
-                        <label>
-                            <span>Ім'я</span>
-                            <input type="text" name="user-name">
-                        </label>
+                        <div class="register-form-group" role="group">
+                            <label>
+                                <span>Ім'я</span>
+                                <input type="text" name="user-name">
+                                <svg class="register-person-icon" width="18" height="18">
+                                    <use href="./images/icons.svg#person-black"></use>
+                                </svg>
+                            </label>
+                            <label>
+                                <span>Телефон</span>
+                                <input type="tel" name="user-phone">
+                                <svg class="register-person-icon" width="18" height="18">
+                                    <use href="./images/icons.svg#phone-black"></use>
+                                </svg>
+                            </label>
+                            <label>
+                                <span>Пошта</span>
+                                <input type="email" name="user-mail">
+                                <svg class="register-person-icon" width="18" height="18">
+                                    <use href="./images/icons.svg#email-black"></use>
+                                </svg>
+                            </label>
+                            <label>
+                                <span>Коментар</span>
+                                <textarea name="user-comit" rows="5" placeholder="Введіть текст"></textarea>
+                            </label>
+                        </div>
 
-                        <label>
-                            <span>Телефон</span>
-                            <input type="tel" name="user-phone">
-                        </label>
-
-                        <label>
-                            <span>Пошта</span>
-                            <input type="email" name="user-mail">
-                        </label>
-
-                        <label>
-                            <span>Коментар</span>
-                            <input type="text" name="user-comit" placeholder="Введіть текст">
+                        <label for="">
+                            <input type="checkbox" name="">
+                            <span>Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></span>
                         </label>
 
                     <button type="submit">Відправити</button>
