@@ -344,7 +344,7 @@ img {
   fill: var(--accent-bg-cl);
 }
 
-/* Form */
+/* Register form */
 
 .register-form {
   padding: 40px;
@@ -363,13 +363,19 @@ img {
   margin-bottom: 20px;
 }
 
-.register-label {
+.register-form-field {
   margin-bottom: 10px;
 }
 
-.register-person-icon {
+.register-form-lable {}
+
+.register-form-input {}
+
+.register-form-icon {
   fill: currentColor;
 }
+
+.register-form-message {}
 
 textarea {
   width: 448px;
@@ -388,6 +394,16 @@ textarea[name="user-comit"]::placeholder {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+
+.register-form-agreement {}
+
+.register-form-checkbox {}
+
+.register-form-desc {}
+
+.register-form-link {}
+
+.register-form-btn {}
 
 /* Features */
 
