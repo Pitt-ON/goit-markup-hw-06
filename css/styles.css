@@ -47,6 +47,19 @@ body {
   overflow: hidden;
 }
 
+.btn {
+  min-height: 50px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: 700;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: var(--light-txt-cl);
+}
+
 /* Reset */
 
 .link {
@@ -237,8 +250,7 @@ img {
   min-height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/head/Teamwork.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/head/Teamwork.jpg);
   background-color: var(--overline-bg-cl);
   background-repeat: no-repeat;
   background-position: center;
@@ -260,18 +272,7 @@ img {
 
 .head-button {
   width: 216px;
-  min-height: 50px;
   background-color: var(--accent-bg-cl);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: 0;
-  cursor: pointer;
-  padding: 10px 30px;
-
-  font-weight: 700;
-  line-height: calc(30 / 16);
-  letter-spacing: 0.06em;
-  color: var(--light-txt-cl);
 
   transition: background-color var(--animation);
 }
@@ -314,8 +315,7 @@ img {
   background-color: var(--basic-bg-cl);
 
   border-radius: 4px;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .modal-btn-closed {
@@ -340,8 +340,8 @@ img {
   transition: fill var(--animation);
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-btn-closed:hover,
+.modal-btn-closed:focus {
   fill: var(--accent-bg-cl);
 }
 
@@ -352,7 +352,7 @@ img {
   text-align: center;
   font-size: 20px;
   letter-spacing: 0.03em;
-  margin-bottom: 12px;  
+  margin-bottom: 12px;
 }
 
 .register-form-group {
@@ -411,7 +411,7 @@ img {
   padding: 12px 16px;
 
   resize: none;
-  outline: transparent;  
+  outline: transparent;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
@@ -476,18 +476,17 @@ img {
   user-select: none;
 }
 
-.register-form-link {}
-
-.register-form-btn {
+.register-form-button {
   display: block;
   margin: 0 auto;
-  
-  
+  width: 200px;
+  background-color: var(--accent-bg-cl);
+
   transition: background-color var(--animation);
 }
 
-.register-form-btn:hover,
-.register-form-btn:focus {
+.register-form-button:hover,
+.register-form-button:focus {
   background-color: var(--accent-hdr-cl);
 }
 
@@ -587,8 +586,7 @@ img {
 
 .team-item {
   background: var(--basic-bg-cl);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -826,7 +824,7 @@ img {
   padding: 15px;
 
   border-radius: 4px;
-  border: 1px solid rgba(0, 0, 0, 0.15)
+  border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 /* input[name="footer-mail"]::placeholder {
@@ -836,26 +834,21 @@ img {
   color: rgba(255, 255, 255, 0.6)
 } */
 
-.input-button {
+.footer-input-button {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   width: 200px;
-  min-height: 50px;
 
   background-color: var(--accent-bg-cl);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: 0;
-  cursor: pointer;
-  padding: 10px 28px;
-  /* font-weight: 700px; */
 
-  font-weight: 700;
-  line-height: calc(30 / 16);  
-  letter-spacing: 0.06em;
-  color: var(--light-txt-cl);  
+  transition: background-color var(--animation);
+}
+
+.footer-input-button:hover,
+.footer-input-button:focus {
+  background-color: var(--accent-hdr-cl);
 }
 
 /* Portfolio.html */
@@ -889,8 +882,7 @@ img {
 .filters-button:focus {
   background-color: var(--accent-bg-cl);
   color: var(--light-txt-cl);
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 3px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-link {
@@ -901,8 +893,7 @@ img {
 
 .portfolio-link:hover,
 .portfolio-link:focus {
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.12);
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-thumb {
