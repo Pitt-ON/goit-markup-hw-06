@@ -822,17 +822,19 @@ img {
   width: 358px;
   height: 50px;
   padding: 15px;
+  margin-right: 12px;
+  background-color: transparent;
 
   border-radius: 4px;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* input[name="footer-mail"]::placeholder {
+.footer-input-mail::placeholder {
   font-size: 16px;
-  line-height: calc(20 / 16);  
+  line-height: calc(20 / 16);
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6)
-} */
+  color: rgba(255, 255, 255, 0.6);
+}
 
 .footer-input-button {
   display: flex;
