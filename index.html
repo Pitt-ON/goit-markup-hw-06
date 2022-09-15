@@ -71,7 +71,7 @@
 
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button class="modal-btn" type="button" data-modal-close>
+                <button class="modal-btn-closed" type="button" data-modal-close>
                     <svg width="11" height="11">
                         <use href="./images/icons.svg#Close"></use>
                     </svg>
@@ -81,6 +81,7 @@
                     <strong class="register-form-title">Залиште свої дані, ми вам передзвонимо</strong>
 
                         <div class="register-form-group" role="group">
+
                             <label class="register-form-field">
                                 <span class="register-form-lable">Ім'я</span>
                                 <input class="register-form-input" type="text" name="user-name" 
@@ -108,23 +109,27 @@
 
                             <label class="register-form-field">
                                 <span class="register-form-lable">Коментар</span>
-                                <textarea 
-                                class="register-form-message" 
-                                name="user-comit" 
-                                rows="6" 
+                                <textarea
+                                class="register-form-message"
+                                name="user-comit"
+                                rows="6"
                                 placeholder="Введіть текст">
                                 </textarea>
                             </label>
                         </div>
 
                         <label class="register-form-agreement">
-                            <input class="register-form-checkbox" type="checkbox" name="">
+                            <input class="register-form-checkbox visually-hidden" type="checkbox" name="register-form-checkbox">
+                            <svg class="register-form-icons" width="16" height="15">
+                                <use class="icon-checked" href="./images/icons.svg#icon-checked"></use>
+                                <use class="icon-unchecked" href="./images/icons.svg#icon-unchecked"></use>
+                            </svg>
                             <span class="register-form-desc">
                                 Погоджуюся з розсилкою та приймаю 
-                                <a class="register-form-link" href="">Умови договору</a></span>
+                                <a class="register-form-link" href="" target="_blank">Умови договору</a></span>
                         </label>
 
-                    <button class="register-form-btn" type="submit">Відправити</button>
+                    <button class="register-form-btn input-button" type="submit">Відправити</button>
                 </form>
             </div>
         </div>
